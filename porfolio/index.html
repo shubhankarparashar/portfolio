@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">  
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title> personal Portfolio</title>
+
+    <link rel="stylesheet" type="text/css" href="portfolio.css">
+    <script src="https://kit.fontawesome.com/aa1de442fb.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+	<div id="header">
+        <div class="container">
+        
+            <nav>
+                <img src="images/logo.jpg" class="logo">
+                <ul>               
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">SERVICES</a></li>
+                <li><a href="#">PORTFOLIO</a></li>
+                <li><a href="#">CONTACT</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>WEB DEVLOPER</p>
+                <h1>HELLO!! I'm<span> Shubhankar <br>Parashar</span><br>from Patna.</h1>
+            </div>
+        </div>
+    </div>
+    <!----------about------->
+    <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/about.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1>ABOUT ME </h1>
+                    <p>Intent to build a career with loading corporate of hi-tech environment with committed and dedicated
+                      people  which will help me to exploremyself fully and realize my potential working to work as a key 
+                      player in challenging and creative environment.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" on click="opentab('skills')">Skills</p>
+                    <p class="tab-links" on click="opentab('experience')">Experience</p>
+                    <P class="tab-links" on click="opentab('education')">Education</P>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>HTML</span><br>Designing Web</li>
+                        <li><span>JAVA</span><br>Web App Devlopment</li>
+                        </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <li><span>FRESHERS</span><br>Looking for a job</li>
+                    <ul>
+                <div class="tab-contents" id="education">
+                    <li><span>2022-current</span><br>Master of computer Application at Chandigarh university.</li>
+                        <li><span>2017-2020</span><br>Bachelors of science(maths)Hons  at Maghad university.</li>
+                        <li><span>2015-2017</span><br>Secondary at Oriental College </span></li>
+                        <li><span>2015</span><br>Matriculation at Satyam International School.</li>
+                </div>
+                    </ul>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>I provide Responsive web page designing which response mobile as mobile view ,laptop as laptop view
+            ,desktop as desktop view.</p>
+            <a href="#">Learn more</a>
+        </div>
+        <div>
+         <i class="fa-solid fa-gear-code"></i>
+          <h2>Market Digitaly</h2>
+        <p>I also provide Googles Ads,social Media Ads,I maintain quality websites at very reasonable price.</p>
+        <a href="#">Learn more</a>
+        </div>
+        <div>
+            <i class="fa-solid fa-share-from-square"></i>
+            <h2>Social Media Integration</h2>
+            <p>social media is a bigger platfornm to grow your Business better way.I integrates all 
+            social media links on your website.throughw hich customer can reach out to your social media
+            pages </p>
+            <a href="#">Learn more</a>
+        </div>
+    </div>
+</div>
+</div>
+<!---------------contact------------>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-titles">Contact Me</h1>
+                <p> shubhankarparashar17@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>  8789340551</p>
+                <div class="social-icons">
+                    <a href=""><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-linkedin"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                </div>
+                <a href="images/Shubhankar Prashar.pdf" download class="btn btn2"> Download CV</a>
+            </div>
+            <div class="contact-right"></div>
+            <form>
+                <input type="text" name="NAME" placeholder="Your Name"required>
+                <input type="email" name="email" placeholder="Your Email"required>
+                <textarea name="message"  rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+
+            </form>
+        </div>
+    </div>
+</div>
+<div class="copyright @ Shubhankar."></div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = documnet.getElementsByClassName("tab-contents");
+
+         function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classlist.remove("active-links");
+            }
+            for(tabcontent of tabcontents){
+                tablink.classlist.remove("active-content");
+            }
+            event.currentTarget.classlist.add("active-link");
+            document.getElementaryById(tabname).classList.add("active-tab");
+            }
+    
+    </script>
+</body>
+</html>
